@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbf3e6">
+<title>મમ્મી માટે ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Noto+Serif+Gujarati:wght@400;600;700&family=Hind+Vadodara:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fbf3e6;--paper:#fffaf0;--peach:#f6cfb2;--coral:#d9795f;--brown:#5a3e32;--soft:#8a6a5a;
+--hand:'Kalam','Noto Serif Gujarati',cursive;--serif:'Noto Serif Gujarati',serif;--sans:'Hind Vadodara',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--brown);font-family:var(--sans);line-height:1.9;overflow-x:hidden;transition:background 1.5s}
+body.locked{overflow:hidden;height:100vh}
+body.bright{background:#fff6e8}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35;
+background:radial-gradient(circle at 15% 10%,#f9dcc5 0,transparent 40%),radial-gradient(circle at 90% 85%,#f6cfb2 0,transparent 38%)}
+section{position:relative;z-index:1;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:72px 22px;text-align:center}
+.wrap{width:100%;max-width:560px}
+h1,h2{font-family:var(--serif);font-weight:700;line-height:1.5;color:var(--brown)}
+h1{font-size:clamp(1.9rem,8vw,3rem)} h2{font-size:clamp(1.5rem,6.2vw,2.2rem);margin-bottom:22px}
+p{font-size:clamp(1.02rem,4.2vw,1.2rem);margin-bottom:1.1em;white-space:pre-line}
+.hand{font-family:var(--hand);color:var(--coral);font-size:1.3rem;line-height:1.6}
+.paper{background:var(--paper);border-radius:22px 26px 20px 28px;padding:34px 26px;box-shadow:0 1px 2px #5a3e3214,0 14px 34px -14px #5a3e3238;position:relative;
+background-image:repeating-linear-gradient(transparent 0 33px,#e9d9c322 33px 34px)}
+.paper::before{content:"";position:absolute;top:-12px;left:50%;width:84px;height:24px;transform:translateX(-50%) rotate(-3deg);background:#f6cfb2aa;border-radius:3px}
+.btn{font-family:var(--sans);font-size:1.08rem;font-weight:500;min-height:52px;padding:12px 30px;border-radius:40px;border:1.5px solid var(--coral);background:var(--coral);color:#fff;cursor:pointer;transition:transform .3s,box-shadow .3s,background .3s;box-shadow:0 8px 20px -8px #d9795f99}
+.btn:active{transform:scale(.96)} .btn:focus-visible{outline:3px solid var(--brown);outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--coral);box-shadow:none}
+.breathe{animation:breathe 3.2s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.045);box-shadow:0 12px 28px -8px #d9795fcc}}
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1.2s ease,transform 1.2s ease}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.25s}.d2{transition-delay:.5s}.d3{transition-delay:.75s}
+/* intro */
+#intro{position:fixed;inset:0;z-index:20;background:var(--cream);transition:opacity 1.4s,visibility 1.4s}
+#intro.gone{opacity:0;visibility:hidden}
+#intro section{min-height:100%}
+.line{width:150px;height:30px;margin:26px auto}
+.line path{stroke:var(--coral);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-dasharray:260;stroke-dashoffset:260;animation:draw 3.2s .6s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+#intro .cta{margin-top:34px}
+/* underline */
+.ul{background:linear-gradient(var(--coral),var(--coral)) 0 100%/0 3px no-repeat;transition:background-size 1.4s .8s;font-weight:600;padding-bottom:2px}
+.in .ul{background-size:100% 3px}
+.note{transform:rotate(-1.4deg);background:#fff3df;border-radius:6px 24px 8px 22px;padding:36px 26px;box-shadow:0 14px 34px -14px #5a3e3244}
+.note::before{content:"📌";position:absolute;top:-14px;left:calc(50% - 12px);font-size:1.5rem}
+.note{position:relative}
+/* photo */
+.polaroid{background:var(--paper);padding:14px 14px 22px;border-radius:18px;box-shadow:0 18px 40px -16px #5a3e3255;transform:rotate(1.6deg);max-width:340px;margin:0 auto;position:relative}
+.frame{aspect-ratio:3/4;border-radius:12px;overflow:hidden;background:var(--peach);position:relative;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.frame img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);will-change:transform;display:block}
+.frame .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--brown);font-size:.95rem;padding:20px;line-height:1.5}
+.polaroid .cap{margin-top:16px;font-size:1.15rem}
+.polaroid::after{content:"";position:absolute;inset:0;border-radius:18px;pointer-events:none;background:repeating-linear-gradient(45deg,#fff0 0 3px,#8a6a5a06 3px 4px)}
+/* stitch */
+.stitch{width:130px;margin:0 auto 18px;display:block;overflow:visible}
+.stitch .h{fill:#f6cfb2;stroke:var(--coral);stroke-width:2.5}
+.stitch .s{stroke:var(--brown);stroke-width:2.5;stroke-dasharray:6 6;stroke-linecap:round;fill:none;stroke-dashoffset:120}
+.in .stitch .s{animation:stitch 2.6s .6s forwards}
+@keyframes stitch{to{stroke-dashoffset:0}}
+/* promise */
+.cards{display:grid;gap:16px}
+.pc{background:var(--paper);border-radius:20px;padding:24px 22px;border:1.5px dashed #d9795f66;cursor:pointer;display:flex;gap:14px;align-items:center;text-align:left;transition:transform .4s,background .4s,border-color .4s;font-family:var(--serif);font-size:1.05rem;line-height:1.8;width:100%;color:var(--brown)}
+.pc .ck{flex:none;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--coral);display:grid;place-items:center;color:#fff;font-size:1rem;transition:background .4s}
+.pc.on{background:#fde6d3;border-style:solid;transform:scale(1.015)} .pc.on .ck{background:var(--coral)}
+.pc small{display:block;color:var(--soft);font-family:var(--sans);font-size:.8rem;margin-top:4px}
+/* final */
+#final h2{font-size:clamp(1.9rem,8.5vw,2.8rem);line-height:1.6}
+.sig{font-family:var(--hand);font-size:1.7rem;color:var(--coral);margin-top:18px}
+.ask{margin-top:26px}
+.row{display:flex;flex-direction:column;gap:12px;align-items:center;margin-top:20px}
+.row .btn{width:100%;max-width:300px}
+.res{display:none;animation:fade 1.4s both} .res.show{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}}
+.res h2{margin-bottom:12px}
+footer{position:relative;z-index:1;text-align:center;padding:46px 22px calc(60px + env(safe-area-inset-bottom));font-size:.95rem;color:var(--soft)}
+footer .hand{display:block;margin-top:8px;font-size:1.25rem}
+/* particles */
+.fl{position:fixed;z-index:2;pointer-events:none;bottom:-30px;opacity:0;animation:up linear forwards;color:var(--coral)}
+@keyframes up{10%{opacity:.7}100%{transform:translate(var(--dx),-110vh) rotate(var(--r));opacity:0}}
+.dust{position:fixed;z-index:0;width:5px;height:5px;border-radius:50%;background:#e9b894;opacity:.4;pointer-events:none;animation:dr linear infinite}
+@keyframes dr{50%{transform:translate(14px,-40px)}100%{transform:translate(-8px,-90px);opacity:0}}
+/* music */
+#mus{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:30;width:50px;height:50px;border-radius:50%;border:1.5px solid var(--coral);background:var(--paper);font-size:1.3rem;cursor:pointer;box-shadow:0 8px 18px -8px #5a3e3266;display:none}
+#mus.show{display:block}
+@media(min-width:700px){section{padding:96px 40px}.row{flex-direction:row;justify-content:center}.row .btn{width:auto}.paper{padding:44px 44px}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="locked">
+
+<!-- ========== COMPONENT: Intro ========== -->
+<div id="intro">
+ <section>
+  <div class="wrap">
+   <p class="hand rv in">મમ્મી માટે... ❤️</p>
+   <h1 class="rv in d1">આજે થોડું દિલથી કહેવું છે...</h1>
+   <svg class="line" viewBox="0 0 150 30" aria-hidden="true"><path d="M5 18 C25 4,40 4,50 16 S70 28,75 14 C80 0,100 4,105 14 C110 22,118 24,145 10"/></svg>
+   <p class="rv in d2">કેટલીક વાતો કહેવી સરળ નથી...
+એટલે આજે લખીને કહી રહ્યો છું.</p>
+   <!-- ===== COMPONENT: Heart-opening interaction ===== -->
+   <button class="btn breathe cta rv in d3" id="open">Open My Heart ❤️</button>
+  </div>
+ </section>
+</div>
+
+<main id="main">
+<!-- ========== COMPONENT: Letter ========== -->
+<section id="letter"><div class="wrap">
+ <div class="paper rv">
+  <h2>મમ્મી, મને માફ કરજે... 🥺</h2>
+  <p>ક્યારેક ખબર જ નથી પડતી કે મારી કોઈ વાતથી તને કેટલું ખરાબ લાગી જાય છે.</p>
+  <p>હું જાણીને ક્યારેય તને દુઃખ પહોંચાડવા નથી માંગતો,
+પણ ક્યારેક ભૂલથી એવું કંઈક બોલાઈ જાય છે
+જે તારા દિલને લાગી જાય છે.</p>
+  <p>અને પછી વિચાર આવે છે કે,
+મારે એવું બોલવું જ નહોતું...</p>
+  <p class="hand">મારી ભૂલ હતી. ❤️</p>
+ </div>
+</div></section>
+
+<!-- ========== COMPONENT: Personal message ========== -->
+<section id="msg"><div class="wrap">
+ <div class="note rv">
+  <h2>એક વાત હંમેશા યાદ રાખજે...</h2>
+  <p>તારા માટે મારા મનમાં ક્યારેય ખરાબ ભાવના નથી હોતી.</p>
+  <p>જો ક્યારેક મારા શબ્દોથી તને દુઃખ થયું હોય,
+તો એ મારા શબ્દોની ભૂલ હતી,
+<span class="ul">મારા દિલની નહીં.</span></p>
+  <p>તું મારા માટે કેટલી મહત્વની છે,
+એ કદાચ હું રોજ કહી નથી શકતો...
+પણ તું મારા જીવનનો <span class="ul">સૌથી ખાસ ભાગ</span> છે.</p>
+ </div>
+</div></section>
+
+<!-- ========== COMPONENT: Mother photo ========== -->
+<section id="photo"><div class="wrap">
+ <figure class="polaroid rv">
+  <div class="frame" id="frame" role="button" tabindex="0" aria-label="Mummy નો ફોટો">
+   <img id="photoImg" alt="મમ્મી" hidden>
+   <div class="ph" id="ph"><span style="font-size:2.2rem">📷</span><b>Mummy no photo</b><span>PHOTO_SRC માં photo path મૂકો<br>(અથવા અહીં tap કરી preview જુઓ)</span></div>
+  </div>
+  <input type="file" id="file" accept="image/*" hidden>
+  <figcaption class="hand cap">મારી દુનિયાની સૌથી ખાસ વ્યક્તિ — મારી મમ્મી ❤️</figcaption>
+ </figure>
+</div></section>
+
+<!-- ========== Mistakes ========== -->
+<section id="mistake"><div class="wrap rv">
+ <svg class="stitch" viewBox="0 0 100 92" aria-hidden="true"><path class="h" d="M50 86 C10 56,2 36,14 20 C26 6,44 10,50 26 C56 10,74 6,86 20 C98 36,90 56,50 86Z"/><path class="s" d="M44 20 L52 38 L46 52 L56 66"/></svg>
+ <h2>હું Perfect નથી...</h2>
+ <p>મારી પાસેથી ભૂલો થાય છે.
+ક્યારેક ગુસ્સો આવે છે,
+ક્યારેક વધારે બોલાઈ જાય છે,
+અને ક્યારેક સમજાય એ પહેલાં જ કોઈ વાત તારા દિલને લાગી જાય છે.</p>
+ <p>પણ એક વાત સાચી છે...</p>
+ <p><b>હું તને ક્યારેય દુઃખી જોવા નથી માંગતો.</b></p>
+</div></section>
+
+<!-- ========== COMPONENT: Promise cards ========== -->
+<section id="promise"><div class="wrap">
+ <h2 class="rv">એક નાનું વચન... 🤍</h2>
+ <div class="cards">
+  <button class="pc rv" aria-pressed="false"><span class="ck">♥</span><span>વધારે સમજવાનો પ્રયત્ન કરીશ.</span></button>
+  <button class="pc rv d1" aria-pressed="false"><span class="ck">♥</span><span>ગુસ્સામાં શબ્દો બોલતા પહેલાં વિચાર કરીશ.</span></button>
+  <button class="pc rv d2" aria-pressed="false"><span class="ck">♥</span><span>અને સૌથી મહત્વનું...<br>તને દુઃખ થાય ત્યારે ego નહીં, પણ તને સમજવાનો પ્રયત્ન કરીશ.<small>(tap કરીને વચન પાક્કું કરો)</small></span></button>
+ </div>
+</div></section>
+
+<!-- ========== COMPONENT: Final apology ========== -->
+<section id="final"><div class="wrap">
+ <h2 class="rv">મમ્મી...<br>મને ખરેખર Sorry. ❤️</h2>
+ <p class="rv d1">મારી ભૂલને justify નથી કરવી.
+મારે બસ એટલું કહેવું છે કે...</p>
+ <p class="rv d2">જો મારા શબ્દોથી તને દુઃખ થયું હોય,
+તો દિલથી માફ કરજે.</p>
+ <p class="rv d3">તું મારી મમ્મી છે...
+અને તારા ચહેરા પર સ્મિત હોય
+એ જ મારા માટે સૌથી મોટી વાત છે.</p>
+ <div class="sig rv d3">— તારો દીકરો ❤️</div>
+</div></section>
+
+<!-- ========== COMPONENT: Forgiveness interaction ========== -->
+<section id="forgive"><div class="wrap">
+ <div class="paper rv" id="ask">
+  <p class="hand">એક છેલ્લી વાત પૂછું?</p>
+  <h2>મને માફ કરીશ ને, Mummy? 🥺</h2>
+  <div class="row">
+   <button class="btn" id="yes">હા ❤️</button>
+   <button class="btn ghost" id="no">હજુ થોડો ગુસ્સો છે 😤</button>
+  </div>
+ </div>
+ <div class="res" id="rYes">
+  <h2>Thank You Mummy! ❤️</h2>
+  <p>મને ખબર હતી મારી Mummy નું દિલ સૌથી મોટું છે. 🥺❤️</p>
+  <p class="hand">હવે એક મોટું hug તો બને જ છે... 🤗</p>
+ </div>
+ <div class="res" id="rNo">
+  <p style="font-family:var(--serif)">બરાબર... 🥺
+જેટલો સમય જોઈએ એટલો લઈ લે.
+
+પણ હું અહીં જ છું...
+અને દિલથી Sorry પણ અહીં જ છે. ❤️</p>
+  <button class="btn" id="hugBtn">એક Hug તો મળી શકે ને? 🤗</button>
+  <h2 id="hugMsg" style="display:none;margin-top:22px">Virtual Hug Sent! 🤗❤️</h2>
+ </div>
+</div></section>
+</main>
+
+<!-- ========== COMPONENT: Footer ========== -->
+<footer>
+ Made with ❤️, થોડા regret સાથે અને ઘણો બધો પ્રેમ.
+ <span class="hand">મમ્મી માટે — હંમેશા. ❤️</span>
+</footer>
+
+<!-- ========== COMPONENT: Music controller ========== -->
+<button id="mus" aria-label="Music on/off" title="Music">🔊</button>
+<audio id="bgm" loop preload="none"></audio>
+
+<script>
+/* ============ ✏️ તમારે બદલવાનું ============
+   PHOTO_SRC : Mummy no photo (e.g. "mummy.jpg" – HTML ni sathe j folder ma mukho)
+   AUDIO_SRC : background music (e.g. "music.mp3"). Khali rakho to soft built-in piano-jeva tune vagse. */
+const PHOTO_SRC = "mummy.jpeg";   // <-- PHOTO PLACEHOLDER
+const AUDIO_SRC = "music.mp3";   // <-- AUDIO PLACEHOLDER
+/* ============================================ */
+
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* Reveal on scroll (Letter, Promise cards, Forgiveness etc.) */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -6% 0px'});
+$$('.rv:not(.in)').forEach(el=>io.observe(el));
+/* safety net: koi pan section hidden na rahe */
+setTimeout(()=>$$('.rv:not(.in)').forEach(el=>{const r=el.getBoundingClientRect();if(r.top<innerHeight)el.classList.add('in')}),1500);
+
+/* Floating hearts */
+function hearts(n=8,spread=1){
+  if(reduce) return;
+  for(let i=0;i<n;i++){
+    const h=document.createElement('span');h.className='fl';h.textContent=['❤','♥','🤍','✦'][i%4];
+    h.style.left=(10+Math.random()*80)+'vw';h.style.fontSize=(12+Math.random()*16)+'px';
+    h.style.setProperty('--dx',((Math.random()-.5)*120*spread)+'px');h.style.setProperty('--r',((Math.random()-.5)*50)+'deg');
+    h.style.animationDuration=(5+Math.random()*4)+'s';h.style.animationDelay=(Math.random()*1.2)+'s';
+    document.body.appendChild(h);setTimeout(()=>h.remove(),11000);
+  }
+}
+/* soft dust */
+if(!reduce) for(let i=0;i<14;i++){const d=document.createElement('i');d.className='dust';
+  d.style.left=Math.random()*100+'vw';d.style.top=(20+Math.random()*80)+'vh';
+  d.style.animationDuration=(9+Math.random()*10)+'s';d.style.animationDelay=(-Math.random()*10)+'s';document.body.appendChild(d)}
+
+/* ========== Music ========== */
+const bgm=$('#bgm'),mus=$('#mus');let playing=false,ctx,master,timer;
+function synthStart(){
+  ctx=ctx||new (window.AudioContext||window.webkitAudioContext)();
+  master=ctx.createGain();master.gain.value=.0;master.connect(ctx.destination);
+  master.gain.linearRampToValueAtTime(.09,ctx.currentTime+3);
+  const prog=[[261.6,329.6,392],[220,261.6,329.6],[174.6,220,261.6],[196,246.9,392]]; // C Am F G
+  let bar=0;
+  const note=(f,t,d)=>{const o=ctx.createOscillator(),g=ctx.createGain();o.type='triangle';o.frequency.value=f;
+    g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.5,t+.03);g.gain.exponentialRampToValueAtTime(.001,t+d);
+    o.connect(g);g.connect(master);o.start(t);o.stop(t+d)};
+  const play=()=>{const t=ctx.currentTime+.05,c=prog[bar%4];
+    [0,1,2,1,2,1,0,1].forEach((k,i)=>note(c[k]*(i%4==2?2:1),t+i*.7,2.2));note(c[0]/2,t,4);bar++};
+  play();timer=setInterval(play,5600);
+}
+function synthStop(){clearInterval(timer);if(master){master.gain.cancelScheduledValues(ctx.currentTime);master.gain.linearRampToValueAtTime(0,ctx.currentTime+.6)}}
+function musicOn(){
+  if(AUDIO_SRC){bgm.src=AUDIO_SRC;bgm.volume=.25;bgm.play().catch(()=>{})}else synthStart();
+  playing=true;mus.textContent='🔊';
+}
+function musicOff(){AUDIO_SRC?bgm.pause():synthStop();playing=false;mus.textContent='🔇'}
+mus.onclick=()=>playing?musicOff():(AUDIO_SRC?musicOn():(ctx&&ctx.state!=='closed'?(clearInterval(timer),synthStart(),playing=true,mus.textContent='🔊'):musicOn()));
+
+/* ========== Open My Heart ========== */
+$('#open').onclick=()=>{
+  hearts(10,.6);
+  $('#intro').classList.add('gone');
+  document.body.classList.remove('locked');
+  window.scrollTo(0,0);
+  mus.classList.add('show');
+  musicOn();
+};
+
+/* ========== Photo ========== */
+const img=$('#photoImg'),ph=$('#ph'),file=$('#file');
+function showPhoto(src){img.src=src;img.hidden=false;ph.style.display='none'}
+if(PHOTO_SRC) showPhoto(PHOTO_SRC);
+$('#frame').onclick=()=>{if(!PHOTO_SRC) file.click()};
+$('#frame').onkeydown=e=>{if(e.key==='Enter'&&!PHOTO_SRC) file.click()};
+file.onchange=()=>{const f=file.files[0];if(f){const r=new FileReader();r.onload=()=>showPhoto(r.result);r.readAsDataURL(f)}};
+/* slow zoom/parallax */
+if(!reduce){const fr=$('#frame');let tick=false;
+  addEventListener('scroll',()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{
+    const r=fr.getBoundingClientRect(),p=Math.min(1,Math.max(0,1-(r.top+r.height/2)/innerHeight));
+    img.style.transform=`scale(${1.04+p*.1}) translateY(${(p-.5)*-14}px)`;tick=false})},{passive:true})}
+
+/* ========== Promise cards ========== */
+$$('.pc').forEach(c=>c.onclick=()=>{const on=c.classList.toggle('on');c.setAttribute('aria-pressed',on);if(on)hearts(4,.4)});
+
+/* ========== Forgiveness ========== */
+$('#yes').onclick=()=>{
+  $('#ask').style.display='none';$('#rYes').classList.add('show');
+  document.body.classList.add('bright');
+  hearts(26,1.6);setTimeout(()=>hearts(14,1.6),1800);
+  $('#rYes').scrollIntoView({behavior:'smooth',block:'center'});
+};
+$('#no').onclick=()=>{
+  $('#ask').style.display='none';$('#rNo').classList.add('show');
+  $('#rNo').scrollIntoView({behavior:'smooth',block:'center'});
+};
+$('#hugBtn').onclick=()=>{
+  $('#hugBtn').style.display='none';$('#hugMsg').style.display='block';hearts(16,1.2);
+};
+</script>
+</body>
+</html>
